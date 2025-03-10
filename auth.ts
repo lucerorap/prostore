@@ -77,6 +77,15 @@ export const config = {
         secure: process.env.NODE_ENV === "production", // must be false on localhost
       },
     },
+    callbackUrl: {
+      name: "authjs.callback-url",
+      options: {
+        httpOnly: true,
+        sameSite: "lax",
+        path: "/",
+        secure: process.env.NODE_ENV === "production", // must be false on localhost
+      },
+    },
   },
 } satisfies NextAuthConfig;
 
