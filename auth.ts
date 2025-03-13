@@ -69,7 +69,7 @@ export const config = {
 
       return session;
     },
-    async jwt({ token, user, trigger, session }: any) {
+    async jwt({ token, user }: any) {
       // Assign user fields to token
       if (user) {
         token.role = user.role;
@@ -88,7 +88,7 @@ export const config = {
 
       return token;
     },
-    async authorized({ request, auth }: any) {
+    async authorized({ request }: any) {
       // Check for session cart cookie
       if (!request.cookies.get("sessionCartId")) {
         // Generate new session cart id cookie
