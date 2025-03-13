@@ -113,26 +113,6 @@ export const config = {
       }
     },
   },
-  cookies: {
-    sessionToken: {
-      name: "authjs.session-token",
-      options: {
-        httpOnly: true,
-        sameSite: "lax",
-        path: "/",
-        secure: process.env.NODE_ENV === "production", // must be false on localhost
-      },
-    },
-    callbackUrl: {
-      name: "authjs.callback-url",
-      options: {
-        httpOnly: true,
-        sameSite: "lax",
-        path: "/",
-        secure: process.env.NODE_ENV === "production", // must be false on localhost
-      },
-    },
-  },
 } satisfies NextAuthConfig;
 
 export const { handlers, auth, signIn, signOut } = NextAuth(config);
