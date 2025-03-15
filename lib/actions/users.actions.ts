@@ -138,7 +138,7 @@ export async function updateUserPaymentMethod(
     });
 
     return {
-      sucess: true,
+      success: true,
       message: "User updated successfully",
     };
   } catch (error) {

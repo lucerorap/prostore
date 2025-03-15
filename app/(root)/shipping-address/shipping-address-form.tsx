@@ -81,6 +81,8 @@ const ShippingAddressForm = ({ address }: { address: ShippingAddress }) => {
                   </FormItem>
                 )}
               />
+            </div>
+            <div className="flex flex-col md:flex-grow gap-5">
               <FormField
                 control={form.control}
                 name="streetAddress"
@@ -101,6 +103,8 @@ const ShippingAddressForm = ({ address }: { address: ShippingAddress }) => {
                   </FormItem>
                 )}
               />
+            </div>
+            <div className="flex flex-col md:flex-grow gap-5">
               <FormField
                 control={form.control}
                 name="city"
@@ -121,6 +125,8 @@ const ShippingAddressForm = ({ address }: { address: ShippingAddress }) => {
                   </FormItem>
                 )}
               />
+            </div>
+            <div className="flex flex-col md:flex-grow gap-5">
               <FormField
                 control={form.control}
                 name="postalCode"
@@ -141,6 +147,8 @@ const ShippingAddressForm = ({ address }: { address: ShippingAddress }) => {
                   </FormItem>
                 )}
               />
+            </div>
+            <div className="flex flex-col md:flex-grow gap-5">
               <FormField
                 control={form.control}
                 name="country"
@@ -162,6 +170,7 @@ const ShippingAddressForm = ({ address }: { address: ShippingAddress }) => {
                 )}
               />
             </div>
+
             <div className="flex gap-2">
               <Button type="submit" disabled={isPending}>
                 {isPending ? (
