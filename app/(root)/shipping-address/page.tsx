@@ -1,5 +1,5 @@
 import { auth } from "@/auth";
-import { getMyCart } from "@/lib/actions/cart-action";
+import { getMyCart } from "@/lib/actions/cart.action";
 import { getUserById } from "@/lib/actions/users.actions";
 import { Metadata } from "next";
 import { redirect } from "next/navigation";
