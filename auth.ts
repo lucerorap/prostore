@@ -3,7 +3,6 @@ import { PrismaAdapter } from "@auth/prisma-adapter";
 import { prisma } from "@/db/prisma";
 import CredentialsProvider from "next-auth/providers/credentials";
 import { compareSync } from "bcrypt-ts-edge";
-import { authConfig } from "./auth.config";
 import { cookies } from "next/headers";
 
 export const config = {
@@ -117,7 +116,6 @@ export const config = {
       }
       return token;
     },
-    ...authConfig.callbacks,
   },
   cookies: {
     sessionToken: {
